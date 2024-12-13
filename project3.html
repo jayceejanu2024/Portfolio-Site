@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayceejanu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Swung+Note&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Peaches+for+Breakfast&display=swap" rel="stylesheet">
+    <link href="HelvetidoodlebyEdT.ttf" rel="stylesheet">
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #7da39d;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a02436;
+            padding: 10px 20px;
+            height: 80px;
+        }
+
+        .logo .jayceejanu {
+            font-family: 'Swung Note', cursive; 
+            font-size: 40px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        @font-face {
+            font-family: 'HelvetidoodlebyEdT';
+            src: url('HelvetidoodlebyEdT.ttf') format('truetype');
+        }
+
+        .nav-link {
+            font-family: 'HelvetidoodlebyEdT', sans-serif;
+            font-size: 30px; 
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+            text-decoration-color: #75101f;
+        }
+
+        .nav {
+            display: flex;
+            gap: 25px; 
+            justify-content: flex-end; 
+        }
+
+        .category-name {
+            font-size: 30px;
+            font-family: 'Peaches For Breakfast', sans-serif;
+            font-weight: bold;
+            color: #801928;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            padding: 10px;
+            max-height: calc(100vh - 150px);
+        }
+
+        .project-content {
+            background-color: #d1e4df;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-y: scroll;
+            max-height: 100%; 
+            width: 60%; 
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+            scrollbar-width: thin;
+            scrollbar-color: #a02436 #d1e4df;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .project-content::-webkit-scrollbar-thumb {
+            background: #a02436;
+            border-radius: 5px;
+        }
+
+        .project-content::-webkit-scrollbar-track {
+            background: #d1e4df;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .arrows-container {
+    position: absolute;
+    top: 13%; 
+    left: 80px; 
+    right: 80px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none; 
+}
+
+.arrow-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #a02436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all; 
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #fdfff5;
+    cursor: pointer;
+    padding: 0;
+    font-weight: bold;
+}
+
+.arrow:hover {
+    background-color: #801928; 
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="jayceejanu">Jayceejanu</a>
+        </div>
+        <nav class="nav">
+            <a href="hi.html" class="nav-link">Hi!</a>
+            <a href="cv page.html" class="nav-link">CV</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="FAQ.html" class="nav-link">FAQ</a>
+        </nav>
+    </header>
+
+    
+    <div class="category-name">Little Things</div>
+
+    
+    <div class="arrows-container">
+        <div class="arrow-container arrow-left">
+            <button class="arrow" onclick="window.location.href='project2.html'">&#10094;</button>
+        </div>
+        <div class="arrow-container arrow-right">
+            <button class="arrow" onclick="window.location.href='project4.html'">&#10095;</button>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="project-content">
+            <img src="Jahnvi Choudhary_ Final Project_page-0001.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0004.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0005.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0011.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0013.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0014.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0021.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0023.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0024.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0025.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0026.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0027.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0028.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0029.jpg" alt="Project 3 Image 1" class="project-image">
+            <img src="Jahnvi Choudhary_ Final Project_page-0031.jpg" alt="Project 3 Image 1" class="project-image">
+
+        </div>
+    </div>
+</body>
+</html>

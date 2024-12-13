@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayceejanu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Swung+Note&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Peaches+for+Breakfast&display=swap" rel="stylesheet">
+    <link href="HelvetidoodlebyEdT.ttf" rel="stylesheet">
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #7da39d;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a02436;
+            padding: 10px 20px;
+            height: 80px;
+        }
+
+
+        .logo .jayceejanu {
+            font-family: 'Swung Note', cursive;
+            font-size: 40px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        @font-face {
+            font-family: 'HelvetidoodlebyEdT';
+            src: url('HelvetidoodlebyEdT.ttf') format('truetype');
+        }
+
+        .nav-link {
+            font-family: 'HelvetidoodlebyEdT', sans-serif;
+            font-size: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+            text-decoration-color: #75101f;
+        }
+
+      
+        .main {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        
+        .illustration {
+            position: sticky;
+         margin-top: 20px;
+         margin-left: 80px;
+            max-width: 40%;
+        }
+
+        .illustration img {
+            width: 100%;
+            height: auto;
+        }
+
+        
+        .faq-section {
+            max-width: 600px; 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 70px;
+            margin-left: auto; 
+            padding-right: 50px; 
+            margin-right: 80px;
+            box-sizing: border-box; 
+        }
+
+        .faq-item {
+            width: 100%; 
+            min-width: 600px; 
+            background-color: #fdfff5;
+            border-radius: 10px; 
+            padding: 15px 50px 15px 60px; 
+            cursor: pointer;
+            font-family: 'Peaches for Breakfast', cursive;
+            font-weight: normal;
+            font-size: 32px;
+            color:#1b3b39;
+            position: relative;
+            opacity: 0.7; 
+            box-sizing: border-box; 
+        }
+
+        .faq-item:hover {
+            background-color: #fdfff5;
+            color: #1b3b39;
+            opacity: 1;
+        }
+
+        .faq-item .answer {
+            display: none;
+            padding: 15px;
+            background-color: #5e776c;
+            color: #fdfff5;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .faq-item.open .answer {
+            display: block;
+        }
+
+        .faq-item .icon {
+            position: absolute;
+            left: 15px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #5e776c; 
+            color: #fdfff5;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family:  'Peaches for Breakfast', cursive;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+       
+        .look-up {
+            text-align: center;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        .look-up img {
+            width: 50px;
+            height: auto;
+        }
+
+        .look-up:hover {
+            opacity: 0.8;
+        }
+
+.look-up-text {
+    display: block; 
+    font-size: 22px; 
+    color: #a02436; 
+    font-family: 'Peaches for Breakfast', cursive;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.look-up:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="jayceejanu">Jayceejanu</a>
+        </div>
+        <nav class="nav">
+            <a href="hi.html" class="nav-link">Hi!</a>
+            <a href="cv page.html" class="nav-link">CV</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="FAQ.html" class="nav-link">FAQ</a>
+        </nav>
+    </header>
+
+   
+    <main class="main">
+       
+        <div class="illustration">
+            <img src="FAQ.png" alt="Pigeon Illustration">
+        </div>
+
+       
+        <div class="faq-section">
+            <div class="faq-item">
+                <span class="icon">+</span>
+                <span>What kind of projects do you specialize in?</span>
+                <div class="answer">
+                    My specialty lies in visual storytelling through zines, illustrations, branding, and digital interface design.
+                    Whether it's a deeply personal zine or a playful app prototype, I am all about infusing a unique narrative into every project.
+                </div>
+            </div>
+            <div class="faq-item">
+                <span class="icon">+</span>
+                <span>Can I collaborate with you or hire you for a project?</span>
+                <div class="answer">
+                    Absolutely! I am open to freelance opportunities and collaborations.
+                    Feel free to drop me a message through the contact page, and we'll surely discuss ideas.
+                    I am excited to create something unique together!
+                </div>
+            </div>
+            <div class="faq-item">
+                <span class="icon">+</span>
+                <span>What is your design process like?</span>
+                <div class="answer">
+                    It is a mix of research, sketching, and a lot of experimenting. I start by understanding the context and story behind the project, then dive into brainstorming and creating mockups.
+                    There is always a focus on making things visually compelling and meaningful.
+                </div>
+            </div>
+            <div class="faq-item">
+                <span class="icon">+</span>
+                <span>What tools or mediums do you prefer to use?</span>
+                <div class="answer">
+                    I love mixing traditional mediums like ink and watercolor with digital tools like Illustrator and Procreate.
+                    There is something magical about the blend of raw, hand-drawn elements with the precision of digital design. It keeps things fresh and full of surprises.
+                </div>
+            </div>
+            <div class="faq-item">
+                <span class="icon">+</span>
+                <span>What is the story behind the pigeon mascot?</span>
+                <div class="answer">
+                    I will just say I have had a lot of run-ins with these city birds. One day I started doodling them as a joke, and now they have taken over! Plus, honestly, their sense of direction inspires me to have the same with the projects I am a part of. And yeah,
+                    they remind me not to take things too seriously and to enjoy the unexpected (and sometimes chaotic) moments in the creative process.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <div class="look-up" onclick="scrollToTop()">
+        <img src="look up.png" alt="Look Up">
+        <span class="look-up-text">Look Up</span> 
+    </div>
+
+    <script>
+        
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('open');
+            });
+        });
+
+        
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
+
+
+

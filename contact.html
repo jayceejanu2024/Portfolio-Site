@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayceejanu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Swung+Note&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Peaches+for+Breakfast&display=swap" rel="stylesheet">
+    <link href="HelvetidoodlebyEdT.ttf" rel="stylesheet">
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #7da39d;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a02436;
+            padding: 10px 20px;
+            height: 80px;
+        }
+
+        .logo .jayceejanu {
+            font-family: 'Swung Note', cursive; 
+            font-size: 40px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        @font-face {
+            font-family: 'HelvetidoodlebyEdT';
+            src: url('HelvetidoodlebyEdT.ttf') format('truetype');
+        }
+
+        .nav-link {
+            font-family: 'HelvetidoodlebyEdT', sans-serif;
+            font-size: 30px; 
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+            text-decoration-color: #75101f;
+        }
+
+        .nav {
+            display: flex;
+            gap: 25px; 
+            justify-content: flex-end; 
+        }
+
+        
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 40px;
+}
+
+.illustration {
+    flex: 0 0 40%; 
+    margin-left: 200px; 
+}
+
+.contact-section {
+    flex: 1;
+    max-width: 50%;
+    margin-left: -70px; 
+}
+
+.illustration img {
+    width: 60%; 
+    height: auto;
+}
+
+
+.contact-header {
+    font-family: 'Peaches for Breakfast', cursive;
+    font-size: 32px;
+    font-weight: normal;
+    color: #1b3b39;
+    margin-bottom: 0;
+}
+
+.contact-subtext {
+    font-family: 'Peaches for Breakfast', cursive;
+    font-size: 24px;
+    line-height: 1;
+    color: #1b3b39;
+    margin-top: 0; 
+}
+
+        .contact-subtext a {
+            color: #1b3b39;
+            text-decoration: none;
+        }
+
+        .contact-subtext a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input,
+textarea {
+    width: 80%; 
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f188; 
+    color: #1b3b39; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    margin-left: 70%;
+    align-self: flex-start; 
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: 'HelvetidoodlebyEdT', sans-serif;
+    background-color: #1b3b39;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2f4f43;
+}
+    </style>
+</head>
+<body>
+
+   
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="jayceejanu">Jayceejanu</a>
+        </div>
+        <nav class="nav">
+            <a href="hi.html" class="nav-link">Hi!</a>
+            <a href="cv page.html" class="nav-link">CV</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+        </nav>
+    </header>
+
+   
+    <main class="main">
+       
+        <div class="illustration">
+            <img src="contact p.png" alt="Pigeon Illustration">
+        </div>
+
+       
+        <div class="contact-section">
+            <h1 class="contact-header">let’s get in touch!</h1>
+            <p class="contact-subtext">
+                for any work-related queries complete<br>
+                the form below or email me at:<br>
+                <a href="mailto:jayceejanu@gmail.com">jayceejanu@gmail.com</a>
+            </p>
+            <form action="submit_contact.php" method="POST">
+                <input type="text" name="name" placeholder="name*" required>
+                <input type="email" name="email" placeholder="email*" required>
+                <input type="text" name="subject" placeholder="subject*" required>
+                <textarea name="message" placeholder="message*" rows="5" required></textarea>
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
